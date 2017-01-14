@@ -12,6 +12,7 @@
 		380E918A1E27130D00E154AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380E91881E27130D00E154AF /* Main.storyboard */; };
 		380E918C1E27130D00E154AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380E918B1E27130D00E154AF /* Assets.xcassets */; };
 		380E918F1E27130D00E154AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380E918D1E27130D00E154AF /* LaunchScreen.storyboard */; };
+		4836F614B7A869365CCB1C0B /* Pods_BusinessViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841AAE5FFBC4EE50DA75A76D /* Pods_BusinessViewer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		380E918B1E27130D00E154AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		380E918E1E27130D00E154AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		380E91901E27130D00E154AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841AAE5FFBC4EE50DA75A76D /* Pods_BusinessViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		880CFFC1CA240793CCA557FD /* Pods-BusinessViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusinessViewer/Pods-BusinessViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		F48C26DCCFDACEF8B2B9FF24 /* Pods-BusinessViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusinessViewer/Pods-BusinessViewer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4836F614B7A869365CCB1C0B /* Pods_BusinessViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33FBCC03B91A1E494C06FE10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841AAE5FFBC4EE50DA75A76D /* Pods_BusinessViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		380E91781E27130D00E154AF = {
 			isa = PBXGroup;
 			children = (
 				380E91831E27130D00E154AF /* BusinessViewer */,
 				380E91821E27130D00E154AF /* Products */,
+				E80CA0001AD808A3181B42BD /* Pods */,
+				33FBCC03B91A1E494C06FE10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = BusinessViewer;
 			sourceTree = "<group>";
 		};
+		E80CA0001AD808A3181B42BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				880CFFC1CA240793CCA557FD /* Pods-BusinessViewer.debug.xcconfig */,
+				F48C26DCCFDACEF8B2B9FF24 /* Pods-BusinessViewer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 380E91931E27130D00E154AF /* Build configuration list for PBXNativeTarget "BusinessViewer" */;
 			buildPhases = (
+				87ACBA808B37C24D419B3DB0 /* [CP] Check Pods Manifest.lock */,
 				380E917D1E27130D00E154AF /* Sources */,
 				380E917E1E27130D00E154AF /* Frameworks */,
 				380E917F1E27130D00E154AF /* Resources */,
+				86EE7FC87D064DD86148B02A /* [CP] Embed Pods Frameworks */,
+				1E90354587848287E8D5E089 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E90354587848287E8D5E089 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusinessViewer/Pods-BusinessViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86EE7FC87D064DD86148B02A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusinessViewer/Pods-BusinessViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87ACBA808B37C24D419B3DB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		380E917D1E27130D00E154AF /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		380E91941E27130D00E154AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880CFFC1CA240793CCA557FD /* Pods-BusinessViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusinessViewer/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		380E91951E27130D00E154AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F48C26DCCFDACEF8B2B9FF24 /* Pods-BusinessViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusinessViewer/Info.plist;
